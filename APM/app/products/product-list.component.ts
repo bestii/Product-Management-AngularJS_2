@@ -15,19 +15,24 @@ export class ProductListComponent implements OnInit{
     showImage:boolean=false;
     listFilter:string='';
     products:IProduct[];
+    errorMessage:string;
 
       constructor(private _productService:ProductService){
       }
 
       toggleImage(): void {
-        this.showImage=!this.showImage;
+        this.showImage = !this.showImage;
       }
 
-      ngOnInit():void{
-          this.products=this._productService.getProducts();
+      ngOnInit(): void {
+         this._productService.getProducts()
+                              .subscribe(
+                                  products => this.products = products,
+                                  error => this.errorMessage = <any>error
+                              );
       }
 
-      onRatingClicked(message:string):void{
-        this.pageTitle='Products List:'+message;
+      onRatingClicked(message: string): void {
+        this.pageTitle = 'Products List:' + message;
       }
 }
