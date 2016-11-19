@@ -1,18 +1,8 @@
 APM/node_modules/*
-APM/app/products/product.js.map
-APM/app/products/product.js
-APM/app/products/product-list.component.js.map
-APM/app/products/product-list.component.js
-APM/app/products/product-filter.pipe.js
-APM/app/products/product-filter.pipe.js.map
-APM/app/shared/star.component.js.map
-APM/app/shared/star.component.js
-APM/app/products/product.service.js.map
-APM/app/products/product.service.js
-APM/app/app.component.js
-APM/app/app.component.js.map
-APM/app/app.module.js
-APM/app/app.module.js.map
+APM/app/products/*.js.map
+APM/app/products/*.js
+APM/app/shared/*.js.map
+APM/app/shared/*.js
+APM/app/*.js
+APM/app/*.js.map
 
-APM/app/products/product-detail.component.js
-APM/app/products/product-detail.component.js.map
